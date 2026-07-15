@@ -63,7 +63,7 @@ export default function Planet() {
       <div className="mainContent">
         <div className="mainContentTop">
           <div className="planetImagesContainer">
-            <div className="planetImages">
+            <div className={`planetImages planetImages${planet.name}`}>
               <img
                 className={`mainImg mainImg${planet.name}`}
                 src={planet.images.planet}
