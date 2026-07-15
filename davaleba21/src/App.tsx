@@ -1,6 +1,5 @@
 import "./App.css";
 import { Navigate, Route, Routes } from "react-router-dom";
-// import planetsData from "./planets.json";
 import Header from "./Components/Header";
 import Planet from "./Components/Planet";
 

@@ -33,7 +33,10 @@ export default function Header() {
           <div className="sideMenu">
             {planetsData.map((planet) => (
               <Link to={`/${planet.name}`}>
-                <button className="sideMenuBtn" onClick={() => setMenuVis(false)}>
+                <button
+                  className="sideMenuBtn"
+                  onClick={() => setMenuVis(false)}
+                >
                   <div className="sideMenuBtnLeft">
                     <div
                       className={`sideMenuPlanetIcon sideMenuIcon${planet.name}`}

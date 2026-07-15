@@ -19,7 +19,7 @@ export default function Planet() {
   let { planetName } = useParams();
 
   const planet = planetsData.find(
-    (planet) => planet.name.toLowerCase() === planetName.toLowerCase(),
+    (planet) => planet.name.toLowerCase() === planetName?.toLowerCase(),
   );
 
   if (!planet) {
@@ -29,22 +29,22 @@ export default function Planet() {
   const [activeInfo, setActiveInfo] = useState("overview");
 
   function generateText() {
-    if (activeInfo === "overview") return planet.overview.content;
-    if (activeInfo === "structure") return planet.structure.content;
-    if (activeInfo === "geology") return planet.geology.content;
+    if (activeInfo === "overview") return planet?.overview?.content;
+    if (activeInfo === "structure") return planet?.structure?.content;
+    if (activeInfo === "geology") return planet?.geology?.content;
   }
 
   function generateSource() {
-    if (activeInfo === "overview") return planet.overview.source;
-    if (activeInfo === "structure") return planet.structure.source;
-    if (activeInfo === "geology") return planet.geology.source;
+    if (activeInfo === "overview") return planet?.overview?.source;
+    if (activeInfo === "structure") return planet?.structure?.source;
+    if (activeInfo === "geology") return planet?.geology?.source;
   }
 
   const bonusInfo = [
-    { id: 1, title: "ROTATION TIME", info: `${planet.rotation}` },
-    { id: 2, title: "REVOLUTION TIME", info: `${planet.revolution}` },
-    { id: 3, title: "RADIUS", info: `${planet.radius}` },
-    { id: 4, title: "AVERAGE TEMP.", info: `${planet.temperature}` },
+    { id: 1, title: "ROTATION TIME", info: `${planet?.rotation ?? ""}` },
+    { id: 2, title: "REVOLUTION TIME", info: `${planet?.revolution ?? ""}` },
+    { id: 3, title: "RADIUS", info: `${planet?.radius ?? ""}` },
+    { id: 4, title: "AVERAGE TEMP.", info: `${planet?.temperature ?? ""}` },
   ];
 
   return (
@@ -129,7 +129,7 @@ export default function Planet() {
         </div>
         <div className="mainContentBottom">
           {bonusInfo.map((info) => (
-            <div className="bottomInfo">
+            <div className="bottomInfo" key={info.id}>
               <p className="bonusInfoTitle">{info.title}</p>
               <p className="bonusInfo">{info.info}</p>
             </div>
