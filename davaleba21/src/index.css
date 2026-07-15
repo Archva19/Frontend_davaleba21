@@ -12,6 +12,10 @@ body{
   height: 100vh;
   overflow: hidden;
   background-color: #070724;
+  background-image: url('../assets/background-stars.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media(max-height: 900px){
