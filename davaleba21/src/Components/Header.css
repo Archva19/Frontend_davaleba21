@@ -1,0 +1,204 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 40px 0 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.logo {
+  font-family: "Antonio", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: -1.05px;
+  color: #ffffff;
+  line-height: 100%;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  gap: 33px;
+  height: 85px;
+}
+
+.navItem {
+  height: 100%;
+  display: flex;
+}
+
+.navLink {
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  opacity: 0.75;
+  text-decoration: none;
+  text-transform: uppercase;
+  height: 100%;
+  border-top: 4px solid transparent;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.navLink:visited {
+  text-decoration: none;
+}
+
+.navLink:hover {
+  opacity: 1;
+}
+
+.Mercury:hover {
+  border-top: 4px solid #419ebb;
+}
+
+.Venus:hover {
+  border-top: 4px solid #eda249;
+}
+
+.Earth:hover {
+  border-top: 4px solid #6d2ed5;
+}
+
+.Mars:hover {
+  border-top: 4px solid #d14c32;
+}
+
+.Jupiter:hover {
+  border-top: 4px solid #d83a34;
+}
+
+.Saturn:hover {
+  border-top: 4px solid #cd5120;
+}
+
+.Uranus:hover {
+  border-top: 4px solid #1ec1a2;
+}
+
+.Neptune:hover {
+  border-top: 4px solid #2d68f0;
+}
+
+.sandwichButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.sideMenu{
+    position: absolute;
+    top: 68px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #070724;
+    z-index: 1000;
+    height: calc(100vh - 68px);
+    padding: 24px;
+}
+
+.sideMenu a{
+    text-decoration: none;
+}
+
+.sideMenuBtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sideMenuBtnLeft{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.sideMenuPlanetIcon{
+width: 20px;
+height: 20px;
+border-radius: 50%;
+}
+
+.sideMenuIconMercury {
+  background-color: #419ebb;
+}
+
+.sideMenuIconVenus {
+  background-color: #eda249;
+}
+
+.sideMenuIconEarth {
+  background-color: #6d2ed5;
+}
+
+.sideMenuIconMars {
+  background-color: #d14c32;
+}
+
+.sideMenuIconJupiter {
+  background-color: #d83a34;
+}
+
+.sideMenuIconSaturn {
+  background-color: #cd5120;
+}
+
+.sideMenuIconUranus {
+  background-color: #1ec1a2;
+}
+
+.sideMenuIconNeptune {
+  background-color: #2d68f0;
+}
+
+.sideMenuPlanetName{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 1.36px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.sideMenuArr{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.406);
+    border-right: 1px solid rgba(255, 255, 255, 0.406);
+    rotate: 315deg;
+    width: calc(1px * sqrt(32));
+    height: calc(1px * sqrt(32));
+}
+
+@media (max-width: 1300px) {
+  header {
+    flex-direction: column;
+    padding-top: 32px;
+  }
+}
+
+@media (max-width: 650px) {
+  header {
+    flex-direction: row;
+    padding: 16px 24px;
+    align-items: center;
+    height: 68px;
+  }
+
+  .navList {
+    display: none;
+  }
+
+  .sandwichButton {
+  display: inline-block;
+}
+}

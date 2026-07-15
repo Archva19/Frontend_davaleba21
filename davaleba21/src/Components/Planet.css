@@ -1,0 +1,561 @@
+.mainContent {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 40px;
+  padding-inline: 165px;
+}
+
+.mainContentTop {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.planetImages {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainImgJupiter {
+  width: 500px;
+}
+
+.saturnBackRing {
+  position: absolute;
+  z-index: -1;
+}
+
+.saturnFrontRing {
+  position: absolute;
+  z-index: 1;
+}
+
+.internalImg {
+  position: absolute;
+  right: 5px;
+  height: 100%;
+  width: auto;
+}
+
+.geologyImg {
+  position: absolute;
+  width: 120px;
+  height: auto;
+  z-index: 2;
+}
+
+.geologyImgMercury {
+  top: 226px;
+}
+
+.geologyImgVenus {
+  top: 281px;
+}
+
+.geologyImgEarth {
+  top: 306px;
+}
+
+.geologyImgMars {
+  top: 249px;
+}
+
+.geologyImgJupiter {
+  top: 372px;
+}
+.geologyImgSaturn {
+  top: 289px;
+}
+
+.geologyImgUranus {
+  top: 310px;
+}
+
+.geologyImgNeptune {
+  top: 306px;
+}
+
+.planetInfo {
+  max-width: 350px;
+}
+
+.planetName {
+  font-family: "Antonio", sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 23px;
+}
+
+.planetTxtInfo {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  margin-bottom: 24px;
+  color: rgba(255, 255, 255, 0.726);
+}
+
+.infoSource {
+  display: flex;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: rgba(255, 255, 255, 0.201);
+  margin-bottom: 39px;
+}
+
+.sourceLink {
+  color: rgba(255, 255, 255, 0.201);
+  margin-left: 3px;
+}
+
+.sourceLink:visited {
+  text-decoration: none;
+}
+
+.sourceIcon {
+  margin-left: 8px;
+}
+
+.btnContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.infoBtn {
+  height: 48px;
+  padding-left: 28px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 25px;
+  letter-spacing: 2.57px;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.201);
+  cursor: pointer;
+}
+
+[class*="infoBtn"]:hover:not([class*="activeBtn"]) {
+  background-color: #d8d8d830;
+}
+
+.activeBtnMercury {
+  background-color: #419ebb;
+}
+
+.activeBtnVenus {
+  background-color: #eda249;
+}
+
+.activeBtnEarth {
+  background-color: #6d2ed5;
+}
+
+.activeBtnMars {
+  background-color: #d14c32;
+}
+
+.activeBtnJupiter {
+  background-color: #d83a34;
+}
+
+.activeBtnSaturn {
+  background-color: #cd5120;
+}
+
+.activeBtnUranus {
+  background-color: #1ec1a2;
+}
+
+.activeBtnNeptune {
+  background-color: #2d68f0;
+}
+
+.buttonNum {
+  opacity: 0.5;
+}
+
+.mainContentBottom {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.bottomInfo {
+  padding: 20px 0 0 23px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.199);
+  height: 128px;
+}
+
+.bonusInfoTitle {
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.bonusInfo {
+  font-family: "Antonio", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  letter-spacing: -1.5px;
+  color: #ffffff;
+  line-height: 100%;
+}
+
+.responsiveBtnContainer {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.199);
+  gap: 43px;
+  padding: 0 20px;
+  height: 50px;
+}
+
+.resInfoBtn {
+  border: none;
+  background-color: transparent;
+  color: white;
+  opacity: 0.5;
+  font-weight: 700;
+  font-size: 9px;
+  line-height: 100%;
+  letter-spacing: 1.93px;
+  height: 100%;
+  border-bottom: 4px solid transparent;
+}
+
+.resActiveBtn {
+  opacity: 1;
+}
+
+.resActiveBtnMercury {
+  border-bottom: 4px solid #419ebb;
+}
+
+.resActiveBtnVenus {
+  border-bottom: 4px solid #eda249;
+}
+
+.resActiveBtnEarth {
+  border-bottom: 4px solid #6d2ed5;
+}
+
+.resActiveBtnMars {
+  border-bottom: 4px solid #d14c32;
+}
+
+.resActiveBtnJupiter {
+  border-bottom: 4px solid #d83a34;
+}
+
+.resActiveBtnSaturn {
+  border-bottom: 4px solid #cd5120;
+}
+
+.resActiveBtnUranus {
+  border-bottom: 4px solid #1ec1a2;
+}
+
+.resActiveBtnNeptune {
+  border-bottom: 4px solid #2d68f0;
+}
+
+@media (min-height: 1000px) {
+  .mainContent {
+    margin-top: 126px;
+    gap: 76px;
+  }
+
+  .mainImgJupiter {
+    width: 582px;
+  }
+
+  .geologyImg {
+    position: absolute;
+    width: 163px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .mainContent {
+    margin-top: 54px;
+    gap: 27px;
+    padding-inline: 40px;
+  }
+
+  .mainContentTop {
+    gap: 37px;
+    flex-direction: column;
+  }
+
+  .planetImagesContainer {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mainImg {
+    height: auto;
+  }
+
+  .mainImgMercury {
+    width: 184px;
+  }
+
+  .mainImgVenus {
+    width: 253px;
+  }
+
+  .mainImgEarth {
+    width: 285px;
+  }
+
+  .mainImgMars {
+    width: 213px;
+  }
+
+  .mainImgJupiter {
+    width: 369px;
+  }
+
+  .mainImgSaturn {
+    width: 263.55px;
+  }
+
+  .mainImgUranus {
+    width: 290px;
+  }
+
+  .mainImgNeptune {
+    width: 285px;
+  }
+
+  .internalImg {
+    right: 1px;
+    height: 100%;
+    width: auto;
+  }
+
+  .geologyImg {
+    width: 90px;
+    top: 200px;
+  }
+
+  .geologyImgMercury {
+    top: 130px;
+  }
+
+  .saturnBackRing,
+  .saturnFrontRing {
+    width: 355.67px;
+  }
+
+  .planetInfo {
+    max-width: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .planetInfoTxts {
+    max-width: 339px;
+  }
+
+  .planetName {
+    font-size: 48px;
+    margin-bottom: 24px;
+  }
+
+  .planetTxtInfo {
+    font-size: 11px;
+    line-height: 22px;
+    margin-bottom: 32px;
+  }
+
+  .infoSource {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+
+  .btnContainer {
+    width: 281px;
+  }
+
+  .infoBtn {
+    font-size: 9px;
+    letter-spacing: 1.93px;
+  }
+
+  .mainContentBottom {
+    gap: 11px;
+  }
+
+  .bottomInfo {
+    padding: 16px 0 0 15px;
+    gap: 6px;
+    height: 88px;
+  }
+
+  .bonusInfoTitle {
+    font-size: 8px;
+    line-height: 16px;
+    letter-spacing: 0.73px;
+  }
+
+  .bonusInfo {
+    font-size: 24px;
+    letter-spacing: -0.9px;
+  }
+}
+
+@media (max-width: 1300px) and (max-height: 1000px) {
+  .mainContent {
+    margin-top: 20px;
+  }
+
+  .mainContentTop {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .mainContent {
+    gap: 28px;
+    margin-top: 0;
+  }
+
+  .mainContentTop{
+    gap: 0;
+  }
+
+  .responsiveBtnContainer {
+    display: flex;
+  }
+
+  .planetImagesContainer {
+    height: 31.5vh;
+  }
+
+  .mainImg {
+    height: auto;
+  }
+
+  .mainImgMercury {
+    width: 111px;
+  }
+
+  .mainImgVenus {
+    width: 154px;
+  }
+
+  .mainImgEarth {
+    width: 173px;
+  }
+
+  .mainImgMars {
+    width: 129px;
+  }
+
+  .mainImgJupiter {
+    width: 224px;
+  }
+
+  .mainImgSaturn {
+    width: 160px;
+  }
+
+  .saturnBackRing {
+    width: 215.66px;
+    height: auto;
+  }
+
+  .saturnFrontRing {
+    width: 215.66px;
+    height: auto;
+  }
+
+  .mainImgUranus {
+    width: 176px;
+  }
+
+  .mainImgNeptune {
+    width: 173px;
+  }
+
+  .geologyImg{
+    top: 100px;
+    width: 50px;
+  }
+
+  .geologyImgMercury{
+    top: 70px;
+  }
+
+.geologyImgJupiter{
+    top: 140px;
+}
+
+  .planetInfo {
+    gap: 0;
+    justify-content: center;
+  }
+
+  .planetInfoTxts {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .planetName {
+    margin-bottom: 16px;
+    font-size: 40px;
+  }
+  .btnContainer {
+    display: none;
+  }
+
+  .mainContentBottom {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .bottomInfo {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 24px 13px 24px;
+    height: 48px;
+  }
+
+  .bonusInfo {
+    font-size: 20px;
+    letter-spacing: -0.75px;
+  }
+}
