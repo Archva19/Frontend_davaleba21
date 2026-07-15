@@ -169,6 +169,8 @@ border-radius: 50%;
     letter-spacing: 1.36px;
     text-transform: uppercase;
     color: #FFFFFF;
+    position: relative;
+    top: 2px;
 }
 
 .sideMenuArr{
